@@ -6,14 +6,15 @@
 // classic "C" struct
 struct Point {
     x: f64,
-    y: f64
+    y: i64
 }
 
 fn main()
 {
-    let point = Point { x: 42.0, y: 42.0 };
+    let point = Point { x: 42.0, y: 42 };
 
-    println!("x={}, y={}", point.x, point.y);
+    // print floating point and hex 
+    println!("x={:.1}, y={:#04x}", point.x, point.y);
 
     return ();
 }
