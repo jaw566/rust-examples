@@ -11,10 +11,14 @@ struct Point {
 
 fn main()
 {
-    let point = Point { x: 42.0, y: 42 };
+    let point: Point = Point { x: 42.0, y: 42 };
 
     // print floating point and hex 
     println!("x={:.1}, y={:#04x}", point.x, point.y);
+
+    let Point { x: left, y: right } = point;     
+
+    println!("left={:.1}, right={:#04x}", left, right);
 
     return ();
 }
