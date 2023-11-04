@@ -1,1 +1,1 @@
-# Playing with Rust programming
+# Some example programs in Rust - for learning purposes
